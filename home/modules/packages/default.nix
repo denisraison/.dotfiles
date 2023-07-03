@@ -7,6 +7,8 @@ in {
     home.packages = with pkgs; [
       exa
       docker
+      bat
+      libnotify
       docker-compose
       gh
       glow

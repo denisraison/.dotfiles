@@ -1,9 +1,11 @@
-{ config, lib, inputs, pkgs, ... }: {
+{ self, config, lib, inputs, pkgs, ... }: {
   home = {
     stateVersion = "22.11";
     homeDirectory = "/home/raison";
     username = "raison";
-    sessionVariables = { };
+    sessionVariables = {
+      NIX_HOME_FLAKE = "$HOME/workspace/dotfiles/home#raison";
+    };
   };
 
   nixpkgs.config = {
@@ -11,15 +13,7 @@
     allowUnfreePredicate = _: true;
   };
 
-  programs = {
-    home-manager.enable = true;
-    bash = {
-      enable = true;
-      initExtra = ''
-        . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
-      '';
-    };
-  };
+  programs = { home-manager.enable = true; };
 
   imports = [ ../../modules/default.nix ];
   modules = {
