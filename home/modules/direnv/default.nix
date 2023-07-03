@@ -9,5 +9,10 @@ in {
       nix-direnv.enable = true;
       enableZshIntegration = true;
     };
+
+    programs.zsh.initExtra = ''
+      source ${pkgs.nix-direnv}/share/nix-direnv/direnvrc
+      eval $(direnv stdlib)
+    '';
   };
 }

@@ -18,6 +18,7 @@ in {
       ipfetch
       keychain
       python39
+      nixfmt
     ];
   };
 }

@@ -55,28 +55,17 @@ in {
       };
 
       # Source all plugins, nix-style
-      plugins = [
-        {
-          name = "auto-ls";
-          src = pkgs.fetchFromGitHub {
-            owner = "notusknot";
-            repo = "auto-ls";
-            rev = "62a176120b9deb81a8efec992d8d6ed99c2bd1a1";
-            sha256 = "08wgs3sj7hy30x03m8j6lxns8r2kpjahb9wr0s0zyzrmr4xwccj0";
-          };
-        }
-        {
-          name = "git-prompt";
-          file = "./plugins/git-prompt/git-prompt.plugin.zsh";
-          src = pkgs.fetchFromGitHub {
-            owner = "ohmyzsh";
-            repo = "ohmyzsh";
-            rev = "a482a02915f361e56669ee9884ebee0eb6f2d8d5";
-            sha256 = "sha256-d69jiukY6RG5rKmBFCIastMXBar59LJZE/OggY6msn4=";
-            sparseCheckout = [ "plugins/git-prompt" ];
-          };
-        }
-      ];
+      plugins = [{
+        name = "git-prompt";
+        file = "./plugins/git-prompt/git-prompt.plugin.zsh";
+        src = pkgs.fetchFromGitHub {
+          owner = "ohmyzsh";
+          repo = "ohmyzsh";
+          rev = "a482a02915f361e56669ee9884ebee0eb6f2d8d5";
+          sha256 = "sha256-d69jiukY6RG5rKmBFCIastMXBar59LJZE/OggY6msn4=";
+          sparseCheckout = [ "plugins/git-prompt" ];
+        };
+      }];
     };
   };
 }
