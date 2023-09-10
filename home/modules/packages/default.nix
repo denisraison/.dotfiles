@@ -21,8 +21,8 @@ in {
       nixfmt
       emacs
       kubectl
-      lens
       k3d
+      k9s
     ];
   };
 }
