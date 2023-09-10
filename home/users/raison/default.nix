@@ -21,5 +21,6 @@
     zsh.enable = true;
     git.enable = true;
     direnv.enable = true;
+    nvim.enable = true;
   };
 }

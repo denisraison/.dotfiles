@@ -19,6 +19,10 @@ in {
       keychain
       python39
       nixfmt
+      emacs
+      kubectl
+      lens
+      k3d
     ];
   };
 }
