@@ -52,6 +52,7 @@ in {
         tree = "exa --tree --icons";
         nd = "nix develop -c $SHELL";
         rebuild = "home-manager switch --flake $NIX_HOME_FLAKE";
+        k = "kubectl";
       };
 
       # Source all plugins, nix-style

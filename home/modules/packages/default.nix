@@ -23,6 +23,9 @@ in {
       kubectl
       k3d
       k9s
+      rustup
+      gccgo13
+      argocd
     ];
   };
 }
