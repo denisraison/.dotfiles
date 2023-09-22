@@ -1,1 +1,1 @@
-{ imports = [ ./zsh ./git ./direnv ./packages ./nvim ]; }
+{ imports = [ ./zsh ./git ./direnv ./packages ./nvim ./vscode ]; }

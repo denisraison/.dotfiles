@@ -15,6 +15,19 @@ in {
       };
     };
 
-    programs.neovim = { enable = true; };
+    programs.neovim = { 
+      enable   = true; 
+      viAlias  = true; 
+      vimAlias = true; 
+      vimdiffAlias = true; 
+      plugins = with pkgs.vimPlugins; [
+	nerdtree
+	rainbow
+      ]; 
+      extraConfig = ''
+	set number
+	set relativenumber
+      '';
+    };
   };
 }

@@ -15,7 +15,7 @@ in {
 
       enableCompletion = true;
       enableAutosuggestions = true;
-      enableSyntaxHighlighting = true;
+      syntaxHighlighting.enable = true;
 
       # .zshrc
       initExtra = ''
@@ -48,8 +48,8 @@ in {
         mv = "mv -iv";
         cp = "cp -riv";
         cat = "bat --paging=never --style=plain";
-        ls = "exa -a --icons";
-        tree = "exa --tree --icons";
+        ls = "eza -a";
+        tree = "eza --tree";
         nd = "nix develop -c $SHELL";
         rebuild = "home-manager switch --flake $NIX_HOME_FLAKE";
         k = "kubectl";
