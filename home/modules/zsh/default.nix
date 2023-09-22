@@ -19,8 +19,6 @@ in {
 
       # .zshrc
       initExtra = ''
-        source $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh
-
         PROMPT="%F{blue}%m %~%b "$'\n'"%(?.%F{green}%Bλ%b |.%F{red}?) %f"
         RPROMPT="$(git_super_status)"
 
