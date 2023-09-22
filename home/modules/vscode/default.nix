@@ -7,13 +7,19 @@ in {
     programs.vscode = {
       enable = true;
       extensions = with pkgs.vscode-extensions; [
-	golang.go
-	rust-lang.rust-analyzer
-	bbenoist.nix
-	hashicorp.terraform
-	ms-python.python
-	ms-vscode.makefile-tools
-	ms-vscode-remote.remote-ssh
+        golang.go
+        rust-lang.rust-analyzer
+        bbenoist.nix
+        hashicorp.terraform
+        ms-python.python
+        ms-vscode.makefile-tools
+        ms-vscode-remote.remote-ssh
+        ms-kubernetes-tools.vscode-kubernetes-tools
+        ms-azuretools.vscode-docker
+        eamodio.gitlens
+
+        # experimental
+        genieai.chatgpt-vscode
       ];
     };
   };
