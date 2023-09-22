@@ -11,3 +11,6 @@ Container shim implemantion to run WASM in kubernetes
 
 https://github.com/container-shim/container-shim
 
+
+Compiling to image 40MB footprint
+https://wasmedge.org/docs/develop/deploy/using-wasmedge-in-docker

@@ -6,9 +6,9 @@ in {
   config = mkIf cfg.enable {
     home.packages = with pkgs; [
       bat
+      gnumake
       eza
-      docker
-      docker-compose
+      docker_24
       gh
       htop
       ipfetch
