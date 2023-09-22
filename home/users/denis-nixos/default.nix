@@ -11,5 +11,6 @@
     git.enable = true;
     packages.enable = true;
     vscode.enable = true;
+    chromium.enable = true;
   };
 }
