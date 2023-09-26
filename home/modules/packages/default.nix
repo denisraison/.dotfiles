@@ -22,6 +22,10 @@ in {
       gccgo13
       argocd
       (google-cloud-sdk.withExtraComponents [google-cloud-sdk.components.bq])
+      fermyon-spin
+      bun
+      go
+      nodejs_18
     ];
   };
 }
