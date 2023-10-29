@@ -26,6 +26,8 @@ in {
       bun
       go
       nodejs_18
+      sqld
+      lshw
     ];
   };
 }
