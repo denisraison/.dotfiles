@@ -5,7 +5,10 @@ in {
   options.modules.zsh = { enable = mkEnableOption "zsh"; };
 
   config = mkIf cfg.enable {
-    home.packages = [ pkgs.zsh ];
+    home.packages = [ 
+      pkgs.zsh
+      pkgs.atuin 
+    ];
 
     programs.zsh = {
       enable = true;
@@ -29,6 +32,8 @@ in {
 
         edir() { tar -cz $1 | age -p > $1.tar.gz.age && rm -rf $1 &>/dev/null && echo "$1 encrypted" }
         ddir() { age -d $1 | tar -xz && rm -rf $1 &>/dev/null && echo "$1 decrypted" }
+
+        eval "$(atuin init zsh)"
       '';
 
       # Tweak settings for history

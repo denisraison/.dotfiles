@@ -6,7 +6,7 @@ in {
   config = mkIf cfg.enable {
     programs.chromium = {
       enable = true;
-      package = pkgs.google-chrome-dev;
+      package = pkgs.google-chrome;
     };
   };
 }

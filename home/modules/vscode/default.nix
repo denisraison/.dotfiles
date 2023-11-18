@@ -23,7 +23,7 @@ in {
         dart-code.flutter
         dart-code.dart-code
         redhat.vscode-yaml
-
+        humao.rest-client
         genieai.chatgpt-vscode
       ];
     };

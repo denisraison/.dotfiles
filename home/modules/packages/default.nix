@@ -28,6 +28,7 @@ in {
       nodejs_18
       sqld
       lshw
+      nodePackages_latest.wrangler
     ];
   };
 }
