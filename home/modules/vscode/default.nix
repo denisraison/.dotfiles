@@ -25,7 +25,14 @@ in {
         redhat.vscode-yaml
         humao.rest-client
         genieai.chatgpt-vscode
-      ];
+      ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+      {
+        name = "volar";
+        publisher = "vue";
+        version = "2.0.12";
+        sha256 = "sha256-uTMOaE/IInT4V6AZb83eoviKO5adiMybIEQkS4pVEcw=";
+      }
+    ];
     };
   };
 }

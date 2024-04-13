@@ -22,7 +22,7 @@
             extraSpecialArgs = { inherit self; };
           };
       in {
-        formatter = pkgs.nixfmt;
+        formatter = pkgs.nixfmt-classic;
         packages = { homeConfigurations.raison = mkUser "raison"; };
       });
 }

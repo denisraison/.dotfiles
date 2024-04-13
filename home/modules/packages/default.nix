@@ -14,7 +14,7 @@ in {
       ipfetch
       keychain
       python39
-      nixfmt
+      nixfmt-classic
       kubectl
       k3d
       k9s
@@ -29,6 +29,7 @@ in {
       sqld
       lshw
       nodePackages_latest.wrangler
+      obsidian
     ];
   };
 }
