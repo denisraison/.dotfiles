@@ -32,6 +32,12 @@ in {
         version = "2.0.12";
         sha256 = "sha256-uTMOaE/IInT4V6AZb83eoviKO5adiMybIEQkS4pVEcw=";
       }
+      {
+        name = "playwright";
+        publisher = "ms-playwright";
+        version = "1.0.22";
+        sha256 = "sha256-foTec3GrXsaTkPa9fHaKtPSY/gB86L02AycZmHwxUuI=";
+      }
     ];
     };
   };

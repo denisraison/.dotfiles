@@ -23,9 +23,9 @@ in {
       argocd
       (google-cloud-sdk.withExtraComponents [google-cloud-sdk.components.bq])
       fermyon-spin
-      bun
       go
-      nodejs_18
+      gopls
+      nodejs_20
       sqld
       lshw
       nodePackages_latest.wrangler
