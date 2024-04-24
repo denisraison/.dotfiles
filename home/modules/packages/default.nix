@@ -30,6 +30,7 @@ in {
       lshw
       nodePackages_latest.wrangler
       obsidian
+      cloudflared
     ];
   };
 }

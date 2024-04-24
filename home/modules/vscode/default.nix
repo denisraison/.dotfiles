@@ -25,6 +25,7 @@ in {
         redhat.vscode-yaml
         humao.rest-client
         genieai.chatgpt-vscode
+        hashicorp.hcl
       ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "volar";
