@@ -27,7 +27,7 @@ in {
         genieai.chatgpt-vscode
         hashicorp.hcl
         github.copilot
-        vscode-extensions.github.copilot-chat
+        github.copilot-chat
       ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "volar";
