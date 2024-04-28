@@ -26,6 +26,8 @@ in {
         humao.rest-client
         genieai.chatgpt-vscode
         hashicorp.hcl
+        github.copilot
+        vscode-extensions.github.copilot-chat
       ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "volar";
@@ -38,6 +40,12 @@ in {
         publisher = "ms-playwright";
         version = "1.0.22";
         sha256 = "sha256-foTec3GrXsaTkPa9fHaKtPSY/gB86L02AycZmHwxUuI=";
+      }
+      {
+        name = "turbo-console-log";
+        publisher = "ChakrounAnas";
+        version = "2.10.4";
+        sha256 = "sha256-6CMnEGss4XkDau6Wn4equMJWoQtSjMgQ15Y7TK3mZvk=";
       }
     ];
     };
