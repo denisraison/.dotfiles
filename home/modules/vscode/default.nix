@@ -26,6 +26,7 @@ in {
         humao.rest-client
         genieai.chatgpt-vscode
         hashicorp.hcl
+        zxh404.vscode-proto3
       ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "volar";
