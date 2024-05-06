@@ -42,8 +42,8 @@ in {
       {
         name = "copilot-chat";
         publisher = "GitHub";
-        version = "0.16.2024050206";
-        sha256 = "sha256-1/zRgBRd6QdNUeZ62lutKCh0YWZc4guZ77Ozpl5t5w0=";
+        version = "0.15.2024042903";
+        sha256 = "sha256-vrA3wIu4K1ZUP/86rugUFGWK1TcJXNtE/oPru/CucvU=";
       }
       {
         name = "playwright";
