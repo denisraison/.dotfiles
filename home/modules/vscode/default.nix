@@ -26,14 +26,24 @@ in {
         humao.rest-client
         genieai.chatgpt-vscode
         hashicorp.hcl
-        github.copilot
-        github.copilot-chat
       ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "volar";
         publisher = "vue";
         version = "2.0.12";
         sha256 = "sha256-uTMOaE/IInT4V6AZb83eoviKO5adiMybIEQkS4pVEcw=";
+      }
+      {
+        name = "copilot";
+        publisher = "GitHub";
+        version = "1.186.856";
+        sha256 = "sha256-AMzSDLBCQ2F48u14eRrf/QnIc9mwXwrUj4JvTdWEN+E=";
+      }
+      {
+        name = "copilot-chat";
+        publisher = "GitHub";
+        version = "0.16.2024050206";
+        sha256 = "sha256-1/zRgBRd6QdNUeZ62lutKCh0YWZc4guZ77Ozpl5t5w0=";
       }
       {
         name = "playwright";
