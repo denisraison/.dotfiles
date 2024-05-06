@@ -57,6 +57,12 @@ in {
         version = "2.10.4";
         sha256 = "sha256-6CMnEGss4XkDau6Wn4equMJWoQtSjMgQ15Y7TK3mZvk=";
       }
+      {
+        name = "vscode-protolint";
+        publisher = "Plex";
+        version = "0.8.0";
+        sha256 = "sha256-DTKWQYRQkV1VTCnuDxakI7mjyMFF55Ppss/QRwjWIog=";
+      }
     ];
     };
   };
