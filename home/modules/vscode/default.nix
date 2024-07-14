@@ -65,12 +65,6 @@ in {
         version = "0.8.0";
         sha256 = "sha256-DTKWQYRQkV1VTCnuDxakI7mjyMFF55Ppss/QRwjWIog=";
       }
-      {
-        name = "continue";
-        publisher = "Continue";
-        version = "0.9.182";
-        sha256 = "sha256-dKKmaPB98llG3tefaj04UkrGjhXcrxg5Y7P4ZtbMCqw=";
-      }
     ];
     };
   };
