@@ -27,12 +27,13 @@ in {
         genieai.chatgpt-vscode
         hashicorp.hcl
         zxh404.vscode-proto3
+        usernamehw.errorlens
       ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "volar";
         publisher = "vue";
-        version = "2.0.12";
-        sha256 = "sha256-uTMOaE/IInT4V6AZb83eoviKO5adiMybIEQkS4pVEcw=";
+        version = "2.0.26";
+        sha256 = "sha256-EeJT4lG361TwpsvTVO0oFosHBtWnyiSRyCVcCsjpSBI=";
       }
       {
         name = "copilot";
@@ -49,8 +50,8 @@ in {
       {
         name = "playwright";
         publisher = "ms-playwright";
-        version = "1.0.22";
-        sha256 = "sha256-foTec3GrXsaTkPa9fHaKtPSY/gB86L02AycZmHwxUuI=";
+        version = "1.1.7";
+        sha256 = "sha256-jbMgEzogc/rZskV7WbxRYfCeIKAcZS2ZMPEdO4jAotk=";
       }
       {
         name = "turbo-console-log";
@@ -63,6 +64,12 @@ in {
         publisher = "Plex";
         version = "0.8.0";
         sha256 = "sha256-DTKWQYRQkV1VTCnuDxakI7mjyMFF55Ppss/QRwjWIog=";
+      }
+      {
+        name = "continue";
+        publisher = "Continue";
+        version = "0.9.182";
+        sha256 = "sha256-dKKmaPB98llG3tefaj04UkrGjhXcrxg5Y7P4ZtbMCqw=";
       }
     ];
     };
